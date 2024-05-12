@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatchCart, useCart } from "./ContextReudcer";
-import Badge from "react-bootstrap/esm/Badge";
 
 export const Card = (props) => {
   const options = props.options;
@@ -103,9 +102,6 @@ export const Card = (props) => {
               onClick={handleAddToCart}
             >
               Add to Cart
-              <Badge pill bg="danger">
-                2
-              </Badge>
             </button>
           </div>
         </div>
