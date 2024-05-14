@@ -4,7 +4,7 @@ const Order = require("../modals/Order");
 
 router.post("/orderData", async (req, res) => {
   let data = req.body.order_data;
-  console.log(data, "ye data hai from OrderDAta.js");
+  console.log(data);
   await data.splice(0, { Order_date: req.body.order_date });
 
   //if email not exisitng in db then create: else: InsertMany()

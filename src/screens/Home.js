@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Card } from "../components/Card";
-import { Carousel } from "../components/Carousel";
-import herbs from "../assets/spaghetti-2931846_1280.jpg";
-import Spaghetti from "../assets/herbs-906140_1280.jpg";
 
 function Home() {
   const [search, setSearch] = useState("");
