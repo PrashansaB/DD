@@ -3,6 +3,7 @@ const app = express();
 const port = 5000;
 const mongoDB = require("./db.js");
 const cors = require("cors");
+require("dotenv").config();
 
 // app.use(cors())
 app.use((req, res, next) => {
@@ -22,5 +23,5 @@ app.use("/api", require("./Routes/DisplayData.js"));
 app.use("/api", require("./Routes/OrderData.js"));
 mongoDB();
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Example app listening on port ${process.env.PORT}`);
 });
